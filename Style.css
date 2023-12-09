@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+}
+ /* #header{
+    margin: 100%;
+    height: 100vh;
+    /* background-image: url(D: \vscode\portfolio\images/portfolio2.png);
+    background-size: cover;
+    background-position: center; */
+
+
+.container{
+    padding: 10px 30%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+/* === */
+
+/* === */
+ .header-text{
+    
+    margin-top: 50px;
+    font-size: 20px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 90px;
+} 
+.header-text h1 span{
+    color: #ff004f;
+}
+/* about */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.about-col-2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-col-2 ul li {
+    padding-bottom: 10px;
+}
+
+.about-col-2 ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #7d1c5e;
+}
+.interests .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 5px;
+    background: #09203a;
+    transition: ease-in-out 0.3s;
+}
+
+
+.interests .icon-box i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+.interests .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+}
+
+.interests .icon-box:hover {
+    background: #042b56eb;
+}
+#Education{
+    padding: 30px 0;
+}
+.Education-list{
+    display:grid ;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-gap:40px ;
+    margin-top:50px ;
+}
+img{
+    padding-top:10px
+     ;
+}
+.skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+}
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #1c7d32;
+}
+
+.contact .info-box {
+    color: #a01a1a;
+    padding: 10px;
+    
+   
+    
+    
+    width: 100%;
+    background: #09203a;
+}
+/* .contact .info-box {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 5px;
+    background: #09203a;
+    transition: ease-in-out 0.3s;
+} */
+
+.contact .info-box i.bx {
+    font-size: 24px;
+    color: #e1de;
+    border-radius: 50%;
+    padding: 10px;
+    /* float: left; */
+    background: #ff004f;
+    margin-left: 180px;
+
+    
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #28a745;
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+}
+
+.contact .info-box p {
+    padding: 0;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+}
+
+.contact .info-box .social-links {
+    margin: 5px 0 0 68px;
+    display: flex;
+}
+
+.contact .info-box .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    margin-right: 12px;
+    transition: transform 0.5s;
+}
+
+.contact .info-box .social-links a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.contact .info-box:hover {
+    background: #042b56eb;
+}
+
+
+/* ====css small screens=== */
+nav .fa-regular{
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+        .header-text h1{
+            font-size: 30px;
+
+        }
+                nav .fa-regular {
+                    display: block;
+                    font-size: 25px;
+
+                }
+        
+                nav .fa-solid {
+                    display: block;
+                    font-size: 25px;
+                }
+                nav ul{
+                    background: #ff004f;
+                    position: fixed;
+                    top: 0;
+                    right: -200px;
+                    width: 200px;
+                    height: 100vh;
+                    padding-top: 50px;
+                    z-index: 2;
+                    transform: right 0.3s;
+                }
+                nav ul li{
+                    display: block;
+                    margin: 25px;
+                }
+                
+                                 nav ul .fa-regular {
+                                    position: absolute;
+                                    top: 25px;
+                                    left: 25px;
+                                    cursor: pointer;
+
+                                    
+                                 }
+                                 .sub-title{
+                                    font-size: 40px;
+                                 }
+                                 .about-col-1, .about-col-2{
+                                    flex-basis: 100%;
+                                 }
+                                 .about-col-1{
+                                    margin-bottom: 30px;
+                                 }
+                                 .about-col-2{
+                                    font-size: 14px;
+                                 }
+                
+                                  /* nav .fa-solid {
+                                      display: block;
+                                      font-size: 25px;} */
+                               
+    
+}
+
